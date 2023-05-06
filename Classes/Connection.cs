@@ -9,6 +9,7 @@ using System.IO;
 using System.Data;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using System.Runtime.Remoting.Messaging;
 
 namespace Mercadinho.Classes
 {
@@ -76,6 +77,22 @@ namespace Mercadinho.Classes
         public string get_delete(int codigo)
         {
             return "delete from produtos where codigo = " + codigo;
+        }
+
+        public string get_select(int codigo)
+        {
+
+            string query = string.Empty;
+            if (codigo > 0)
+            {
+                query = "select codigo as 'Codigo', nome as 'Nome', preco as 'Preco', validade as 'Validade' from produtos WHERE codigo = " + codigo.ToString();
+            }
+            else
+            {
+                query = "select codigo as 'Codigo', nome as 'Nome', preco as 'Preco', validade as 'Validade' from produtos;";
+            }
+
+            return query;
         }
 
 

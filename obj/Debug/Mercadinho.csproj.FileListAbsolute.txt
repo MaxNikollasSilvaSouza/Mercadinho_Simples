@@ -32,3 +32,5 @@ D:\Programas\DotNET\Mercadinho\bin\Debug\System.Memory.xml
 D:\Programas\DotNET\Mercadinho\bin\Debug\System.Numerics.Vectors.xml
 D:\Programas\DotNET\Mercadinho\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Programas\DotNET\Mercadinho\obj\Debug\Mercadinho.csproj.CopyComplete
+D:\Programas\DotNET\Mercadinho\obj\Debug\Mercadinho.Interfaces.CadastrarProdutos.resources
+D:\Programas\DotNET\Mercadinho\obj\Debug\Mercadinho.Interfaces.AtualizarProdutos.resources

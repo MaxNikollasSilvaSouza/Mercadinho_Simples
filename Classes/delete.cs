@@ -12,7 +12,7 @@ namespace Mercadinho.Classes
 {
     internal class delete
     {
-        int codigo = 0;
+      
 
         private string queryString = "";
 
@@ -25,14 +25,13 @@ namespace Mercadinho.Classes
 
         public delete() { con = new Connection(); }
 
-        public void set_codigo_prod(int prodd_codigo) { this.codigo = prodd_codigo; }
-
-        public string deletar()
+        
+        public string deletar(int codigo)
         {
             string resp = "No";
             try
             {
-                queryString = con.get_delete(this.codigo);
+                queryString = con.get_delete(codigo);
 
                 conexao = con.get_connection();
                 con.open_conection();
